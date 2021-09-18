@@ -1,14 +1,14 @@
 const Sequelize = require('sequelize');
 
-const sequelize = ('../connection');
+const sequelize = require('../connection');
 
-const Translation = sequelize.define('translation',{
+const Translation = sequelize.define ('translation',{
     translationId:{
         type: Sequelize.INTEGER,
-        primartKey: true,
-        allowNull: false,
+        primaryKey: true,
+        allowNull: false, 
         autoIncrement: true
-    },
+    }, 
     toLang: {
         type: Sequelize.STRING,
         allowNull: false
@@ -16,7 +16,7 @@ const Translation = sequelize.define('translation',{
     fromLang: {
         type: Sequelize.STRING,
         allowNull: false
-    },
+    }, 
     textContent: {
         type: Sequelize.STRING,
         allowNull:false

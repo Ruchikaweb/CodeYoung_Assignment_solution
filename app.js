@@ -19,4 +19,4 @@ app.use('/', router);
 
 app.listen(port,host, ()=>{
     console.log(`server is running at ${host}:${port}`)
-}) ;
+}) ;  
